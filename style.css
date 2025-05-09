@@ -17,7 +17,7 @@ body {
 
 /* Header */
 header {
-    padding: 50px;
+    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@ header {
 }
 
 .logo img {
-    height: 50px;    /* หรือปรับเป็น 35px, 50px ตามที่ต้องการ */
+    height: 100px;    /* หรือปรับเป็น 35px, 50px ตามที่ต้องการ */
     width: auto;
     display: block;
 }
