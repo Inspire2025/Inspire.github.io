@@ -25,7 +25,8 @@ header {
     background: #f9f7f0; /* Ivory Luxe */
 }
 .logo img {
-    height: 50px; /* ปรับขนาดโลโก้ตามต้องการ */
+    height: 40px;  /* ลองปรับตามต้องการ เช่น 40px, 60px */
+    width: auto;   /* ให้กว้างอัตโนมัติ */
 }
 
 header h1 {
