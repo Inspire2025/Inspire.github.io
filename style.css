@@ -25,7 +25,8 @@ header {
     background: #f9f7f0; /* Ivory Luxe */
 }
 .logo img {
-    height: 500px; /* ปรับขนาดโลโก้ตามต้องการ */
+    height: 200
+        px; /* ปรับขนาดโลโก้ตามต้องการ */
 }
 
 header h1 {
