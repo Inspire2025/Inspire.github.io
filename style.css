@@ -22,8 +22,9 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    background: #f9f7f0; /* Ivory Luxe */
+    background: #f9f7f0;
 }
+
 .logo img {
     height: 40px;    /* หรือปรับเป็น 35px, 50px ตามที่ต้องการ */
     width: auto;
