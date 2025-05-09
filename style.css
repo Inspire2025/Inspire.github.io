@@ -7,17 +7,25 @@
 }
 
 body {
-    background: #fff;
-    color: #111;
+    background: #f9f7f0; /* Ivory Luxe */
+    color: #132e62;      /* Midnight Navy */
     line-height: 1.6;
     font-size: 16px;
+    font-family: 'Cormorant Garamond', serif;
 }
+
 
 /* Header */
 header {
-    padding: 30px 20px;
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #ddd;
+    background: #f9f7f0; /* Ivory Luxe */
+}
+.logo img {
+    height: 50px; /* ปรับขนาดโลโก้ตามต้องการ */
 }
 
 header h1 {
@@ -28,18 +36,17 @@ header h1 {
 
 nav ul {
     list-style: none;
-    margin-top: 15px;
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 
 nav a {
     text-decoration: none;
-    color: #111;
+    color: #132e62; /* Midnight Navy */
     font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: 'DM Sans', sans-serif; /* Sub font */
 }
 
 /* Product Section */
@@ -53,8 +60,9 @@ nav a {
 .product-section h2 {
     font-size: 2rem;
     margin-bottom: 40px;
-    letter-spacing: 3px;
-    font-weight: 300;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /* Grid */
@@ -66,10 +74,11 @@ nav a {
 
 /* Product Card */
 .product-card {
-    border: 1px solid #eee;
+    border: 1px solid #ddd;
     padding: 20px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     cursor: pointer;
+    background: #fff;
 }
 
 .product-card:hover {
@@ -85,15 +94,17 @@ nav a {
 }
 
 .product-card h3 {
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 500;
     margin-bottom: 10px;
     letter-spacing: 1px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .product-card p {
     font-size: 0.95rem;
-    color: #555;
+    color: #444;
+    font-family: 'DM Sans', sans-serif;
 }
 
 /* Footer */
