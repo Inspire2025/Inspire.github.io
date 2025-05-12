@@ -1,134 +1,84 @@
 /* Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 body {
-    background: #f9f7f0; /* Ivory Luxe */
-    color: #132e62;      /* Midnight Navy */
-    line-height: 1.6;
-    font-size: 16px;
-    font-family: 'Cormorant Garamond', serif;
+  background: #f9f7f0; /* Ivory Luxe */
+  color: #132e62;       /* Midnight Navy */
+  line-height: 1.6;
+  font-size: 16px;
 }
-
 
 /* Header */
 header {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    background: #f9f7f0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  background: #f9f7f0;
 }
 
 .logo img {
-    height: 70px;    /* หรือปรับเป็น 35px, 50px ตามที่ต้องการ */
-    width: auto;
-    display: block;
-}
-
-
-header h1 {
-    font-size: 2.5rem;
-    letter-spacing: 4px;
-    font-weight: 400;
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #132e62; /* Midnight Navy */
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: 'DM Sans', sans-serif; /* Sub font */
+  text-decoration: none;
+  color: #132e62;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* Product Section */
 .product-section {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-    text-align: center;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .product-section h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
-
-/* Grid */
-.product-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-
 
 /* Product Card */
 .product-card {
-  width: 320px;       /* กำหนดความกว้างใหม่ (เช่น 240px–300px) */
-  margin: 0 auto;     /* จัดให้อยู่ตรงกลาง */
+  width: 320px;
+  margin: 0 auto;
   padding: 24px;
   background: #fff;
   border: 1px solid #eee;
   text-align: center;
+  transition: transform 0.3s ease;
 }
-
 
 .product-card:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
+/* Product Image Hover Effect */
 .product-img {
   position: relative;
   width: 100%;
-  height: 560px;   /* ทำให้สูงขึ้น (เช่น 420px–600px ตามรูปเสื้อแนวตั้ง) */
-  overflow: hidden;
-}
-
-
-.product-card h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 16px;
-    letter-spacing: 1px;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-.product-card p {
-  font-size: 1rem;
-  color: #444;
-  margin-top: 4px;
-    font-family: 'DM Sans', serif;
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.85rem;
-    color: #999;
-    border-top: 1px solid #ddd;
-}
-.product-img {
-  position: relative;
-  width: 100%;
-  height: 300px;
+  height: 520px;
   overflow: hidden;
 }
 
@@ -139,6 +89,7 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 15%;  /* เลื่อนลงให้เห็นหัว */
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -154,3 +105,28 @@ footer {
   opacity: 0;
 }
 
+/* Text */
+.product-card h3 {
+  font-size: 1.1rem;
+  margin-top: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 1px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 4px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #999;
+  border-top: 1px solid #ddd;
+  background: #f9f7f0;
+}
