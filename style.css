@@ -96,7 +96,7 @@ nav a {
 .product-img {
   position: relative;
   width: 100%;
-  height: 520px;   /* ทำให้สูงขึ้น (เช่น 420px–600px ตามรูปเสื้อแนวตั้ง) */
+  height: 560px;   /* ทำให้สูงขึ้น (เช่น 420px–600px ตามรูปเสื้อแนวตั้ง) */
   overflow: hidden;
 }
 
