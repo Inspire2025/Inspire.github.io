@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-  padding: 44px;
+  padding: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,8 +24,8 @@ header {
 }
 
 .logo img {
-  height: 50px;
-  width: auto;
+  height: 50px !important;
+  width: auto !important;
   display: block;
 }
 
